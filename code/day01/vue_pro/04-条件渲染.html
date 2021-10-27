@@ -1,0 +1,26 @@
+<body>
+
+    <div id="app">
+        <input type="checkbox" v-model="ok">同意许可协议
+        <!-- v:if条件指令：还有v-else、v-else-if 切换开销大 -->
+        <h1 v-if="ok">if：协议内容.</h1>
+        <h2 v-else>no</h2>
+    
+        <!-- v:show 条件指令 初始渲染开销大 -->
+        <h3 v-show="ok">show：协议内容.</h3>
+        <h4 v-show="!ok">no</h4>
+        <!-- v-if显示隐藏是将dom元素整个添加或删除，而v-show隐藏则是为该元素添加css--display:none，dom元素还在。 -->
+    </div>
+
+    <script src="/static/js/vue.min.js"></script>
+    <script>
+        // 创建一个vue对象
+        new Vue({
+            //绑定vue作用的范围
+            el: '#app',
+            data: {
+                ok: false
+            }
+        })
+    </script>
+</body>
