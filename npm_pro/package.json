@@ -1,0 +1,20 @@
+{
+  "name": "npm_pro",
+  "version": "1.0.0",
+  "description": "npm ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test2": "npm -v",
+    "test3": "echo '你好世界'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
